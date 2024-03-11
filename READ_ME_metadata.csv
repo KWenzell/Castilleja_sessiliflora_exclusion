@@ -1,0 +1,126 @@
+"Metadata for code and datafiles for Wenzell, Zhang, Skogen, and Fant, bioRxiv, 2024; collated for submission 20240310",,,
+File_name,Description,Column_names,Column_desprictions
+Cast_sess_SelfIncompatibilityCG_20240310.xlsx,Data regarding results of hand-selfing and bagging treatments to assess self incompatibility in C. sessiliflora in a common garden at CBG in 2019; Supplemental Table S1 (no statistical analyses performed in R),CG_Individual (plantID),unique identifier used to track individual plants in a common garden
+,,Population,population where seed was collected/provenance
+,,State,location of population
+,,# Hand self- pollinated flowers,as described
+,,"Total # flowers (bagged, pollinators excluded)",as described
+,,# Fruits,as described
+,,Fruit-flower ratio (hand-selfed),as described
+,,Fruit-flower ratio (bagged),as described
+CastPollExcl_submission_20240310.R,R script containing analyses for all subsequent data files,,
+Cast_pollExclData_submission20240310.csv,data resulting from pollination exclusion experiment,plantID,unique identified for individual plant included in experiment
+,,pop,population code
+,,year,year experiment was performed
+,,trt_Open,treatment (period when plants were exposed to pollinators)
+,,nFlrs,number of flowers included in treatment
+,,nFrts,number of fruits recorded after experiment
+,,frtSet,proportion fruit set/ fruit to flower ratio= nFlrs/nFrts
+,,corL,corolla length category: short or long (see value thresholds based on population mean value in text)
+,,sp,species: S = C. sessiliflora; C = C. citrina; L = C. lindheimeri
+,,majorPollinator,pollinator functional group that contributed the most floral visits to the population during experiment
+,,majorPollPeriod,period of activity categorizing majorPollinator (diurnal or nocturnal)
+,,latN,degrees latitude (North)
+,,lonW,degrees longitude (West)
+,,visTotal,total number of floral visits recorded
+Cast_pollExclPop_submission20240310.csv,"Summary data for each of nine populations where exclusion experiments were conducted, used to create map of populations (Fig 1A)",pop,population code
+,,year,year experiment was performed
+,,corL,corolla length category: short or long (see value thresholds based on population mean value in text)
+,,sp,species: S = C. sessiliflora; C = C. citrina; L = C. lindheimeri
+,,majorPollinator,pollinator functional group that contributed the most floral visits to the population during experiment
+,,majorPollPeriod,period of activity categorizing majorPollinator (diurnal or nocturnal)
+,,latN,degrees latitude (North)
+,,lonW,degrees longitude (West)
+,,visTotal,total number of floral visits recorded
+Cast_pollExcl_corL_submission20240310.csv,Individual-level data of measurements of corolla length (each value represents an average value of two flowers measured per plant),plant,distinct unique identifier assigned to individual plants when measuring floral trait data (this plant ID value NOT SHARED with plantID from exclusion experiments)
+,,pop,population code
+,,sp,species: S = C. sessiliflora; C = C. citrina; L = C. lindheimeri
+,,corL,"length of corolla tube in mm, taken from scanned images of fresh tissue collected in the field"
+,,LatN,degrees latitude (North)
+,,LonW,degrees longitude (West)
+Cast_pollExclVisitationDataL_submission20240310.csv,Floral visitation data recorded to experimental populations during exclusion treatment windows; long data format; used for visualizations,year,year experiment was performed/ these visitation data were collected
+,,pop,population code
+,,dataset,"how visitation data were recorded: intials of author leading data collection (J.B.F. in 2012/2013, K.E.W. in 2019) and dataset view: if visitation was recorded only to designated focal plants in a narrow field of view (narrow), or to any Castilleja plants in a population-wide field of view (wide); see Wenzell et al., 2023, Oikos for additional details of observation methods and datasets"
+,,pollFxGroup,"pollinator functional group (see Wenzell et al. 2023, Oikos for details of how categories are defined)"
+,,pgVisit,number of floral visits recorded by that pollinator functional group
+,,openFlrs,number of open flowers on plants being observed
+,,popObsTime,total time (minutes) of observation time
+,,visRate,visitation rate per pollinator group: number of visits/ flower/ hour [pgVisit/openFlrs/(popObsTime/60)]
+,,visProp,proportion of total visits per pollinator group: [pgVisit/ visTotal]
+,,visTotal,total number of floral visits recorded (sum of pgVisits by population)
+,,pollFxGrp2,pollinator functional group v2- uncommon categories from above further collapsed for simplicity (to umbrella categories: other_diurnal (otherD) and other_nocturnal (otherN))
+Cast_pollExclVisitationData_submission20240310.csv,"Floral visitation data recorded to experimental populations during exclusion treatment windows; same data as above file but formatted in wide data format, with columns for each category of pollFxGrp2 pollinator functional groups; used to generate Supplemental Table S3",year,year experiment was performed/ these visitation data were collected
+,,pop,population code
+,,dataset,"how visitation data were recorded: intials of author leading data collection (J.B.F. in 2012/2013, K.E.W. in 2019) and dataset view: if visitation was recorded only to designated focal plants in a narrow field of view (narrow), or to any Castilleja plants in a population-wide field of view (wide); see Wenzell et al., 2023, Oikos for additional details of observation methods and datasets"
+,,ct_otherD,"count (number of floral visits) to population from ""other diurnal"" visitors"
+,,ct_hawkmoth,count (number of floral visits) to population from hawkmoths
+,,ct_small_bee,count (number of floral visits) to population from small bees
+,,ct_otherN,"count (number of floral visits) to population from ""other nocturnal"" visitors"
+,,ct_bumblebee,count (number of floral visits) to population from bumblebee visitors
+,,ct_hummingbird,count (number of floral visits) to population from hummingbirds
+,,pr_otherD,"proportion of total visits to population from ""other diurnal"" visitors"
+,,pr_hawkmoth,proportion of total visits to population from hawkmoths
+,,pr_small_bee,proportion of total visits to population from small bees
+,,pr_otherN,"proportion of total visits to population from ""other nocturnal"" visitors"
+,,pr_bumblebee,proportion of total visits to population from bumblebee visitors
+,,pr_hummingbird,proportion of total visits to population from hummingbirds
+,,rt_otherD,"visitation rate to population from ""other diurnal"" visitors"
+,,rt_hawkmoth,visitation rate to population from hawkmoths
+,,rt_small_bee,visitation rate to population from small bees
+,,rt_otherN,"visitation rate to population from ""other nocturnal"" visitors"
+,,rt_bumblebee,visitation rate to population from bumblebee visitors
+,,rt_hummingbird,visitation rate to population from hummingbirds
+,,visTotal,total number of floral visits recorded to population
+Cast_SCC_floralCorL_perFlr.csv,Floral measurements of corolla length (mm) taken from individual flowers at population SCC in 2016,plant,distinct unique identifier assigned to individual plants when measuring floral trait data (this plant ID value NOT SHARED with plantID from exclusion experiments)
+,,flrRep,code representing the flower replicate measured per plant
+,,pop,population code
+,,sp,C. sessiliflora only
+,,corL,"length of corolla tube in mm, taken from scanned images of fresh tissue collected in the field"
+,,LatN,degrees latitude (North)
+,,LonW,degrees longitude (West)
+Wenzelletal2023_Oikos_fruitSet.csv,"Data originally presented in Wenzell et al., 2023, Oikos of fruit set (fruit-to-flower ratio) data collected throughout populations (not associated with an exclusion experiment), reformatted for analysis in this study",plantID,distinct unique identifier assigned to individual plants (this plant ID value NOT SHARED with plantID from exclusion experiments)
+,,pop,population code
+,,year,year in which data were collected
+,,popYear,concatenated value of population and year values
+,,sp,species: S = C. sessiliflora; C = C. citrina; L = C. lindheimeri; P = C. purpurea
+,,nFlrs,number of flowers produced by the plant at the end of the flowering season (based on counting flowering nodes along the stem)
+,,nFrts,number of fruit pods formed along stem
+,,latN,degrees latitude (North)
+,,lonW,degrees longitude (West)
+,,corLcat,corolla length category: short or long (see value thresholds based on population mean value in text)
+,,majorVisPeriod,"activity period category of most frequent visitor to population (nocturnal or diurnal), based on observations conducted in the same year that fruit set data were recorded (see below)"
+,,noVisitation,binary variable representing whether this population had zero pollinator visitation recorded to it during same-year observation (0 = false (visitation was recorded); 1 = true (no visitation was recorded to population))
+Wenzelletal2023_Oikos_visitDiv.csv,"Data originally presented in Wenzell et al., 2023, Oikos of floral visitation to populations across the range of focal species and in multiple years, reformatted for analysis in this study",popYr,concatenated value of population and year values
+,,year,year in which data were collected
+,,pop,population code
+,,dataset,"how visitation data were recorded: dataset view: if visitation was recorded only to designated focal plants in a narrow field of view (narrow), or to any Castilleja plants in a population-wide field of view (wide); see Wenzell et al., 2023, Oikos for additional details of observation methods and datasets"
+,,ct_other,"count of floral visits made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,ct_bumble_lg_bee,"count of floral visits made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,ct_butterfly_all,"count of floral visits made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,ct_hawkmoth,"count of floral visits made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,ct_small_med_bee,"count of floral visits made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,ct_hummingbird,"count of floral visits made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,pr_other,"proportion of floral visits made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,pr_bumble_lg_bee,"proportion of floral visits made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,pr_butterfly_all,"proportion of floral visits made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,pr_hawkmoth,"proportion of floral visits made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,pr_small_med_bee,"proportion of floral visits made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,pr_hummingbird,"proportion of floral visits made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,rt_other,"visitation rate made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,rt_bumble_lg_bee,"visitation rate made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,rt_butterfly_all,"visitation rate made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,rt_hawkmoth,"visitation rate made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,rt_small_med_bee,"visitation rate made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,rt_hummingbird,"visitation rate made by respective pollinator functional group (see Wenzell et al., 2023 for details)"
+,,sp,species: S = C. sessiliflora; C = C. citrina; L = C. lindheimeri; P = C. purpurea
+,,majorVis50p,"major floral visitor based on which functional group contributed > 50% of visits; generalized = when no one functional group contributed the majority of visits (all generalized populations were still visited predominately by diurnal functional groups, so were considered diurnal (below))"
+,,majorVisPeriod,period of activity categorizing major visitor (diurnal or nocturnal)
+,,corLcat,category of corolla length: short = population mean corolla length (corL) < 38 mm; long = population mean corolla length > 41mm
+,,corL,population mean corolla length (mm)
+,,latN,degrees latitude (North)
+,,lonW,degrees longitude (West)
+,,visTotal,total number of visits per population-year
+,,avgFlrs,population average number of flowers per stem recorded after flowering period for fruit set measurement
+,,avgFrts,population average number of fruits per stem recorded after flowering period for fruit set measurement
+,,avgFrtSet,population average fruit set (fruit to flower ratio)= avgFrts/ avgFlrs
+,,ct_InvSimpD,Inverse Simpson's Diversity Index calculated based on count visitation data

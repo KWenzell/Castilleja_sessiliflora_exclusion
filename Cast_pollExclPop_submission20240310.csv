@@ -1,0 +1,11 @@
+pop,year,corL,sp,majorPollinator,majorPollPeriod,latN,lonW,visTotal
+CQL,2019,short,C,bumble_lg_bee,diurnal,33.20647,-98.15727,104
+LVH,2019,short,L,hummingbird,diurnal,30.2759,-97.8971,59
+SBL,2019,long,S,hawkmoth,nocturnal,33.34243,-104.333,33
+SCC,2012,long,S,hawkmoth,nocturnal,37.967852,-104.8305504,119
+SCL,2019,long,S,hawkmoth,nocturnal,33.5655,-101.80032,66
+SIC,2019,short,S,hawkmoth,nocturnal,30.486035,-101.7882521,133
+SILB,2012,long,S,hawkmoth,nocturnal,42.44124,-87.80295,37
+SILB,2013,long,S,small_med_bee,diurnal,42.44124,-87.80295,3
+SMP,2019,short,S,bumble_lg_bee,diurnal,32.2852116,-100.7884505,106
+SNRM,2019,long,S,small_med_bee,diurnal,41.89933,-89.34156,249
