@@ -1,4 +1,4 @@
-"Metadata for code and datafiles for Wenzell, Zhang, Skogen, and Fant, bioRxiv, 2024; collated for submission 20240310",,,
+"Metadata for code and datafiles for Wenzell, Zhang, Skogen, and Fant, bioRxiv, 2024; collated for submission 20240310, and revision 20240502",,,
 File_name,Description,Column_names,Column_desprictions
 Cast_sess_SelfIncompatibilityCG_20240310.xlsx,Data regarding results of hand-selfing and bagging treatments to assess self incompatibility in C. sessiliflora in a common garden at CBG in 2019; Supplemental Table S1 (no statistical analyses performed in R),CG_Individual (plantID),unique identifier used to track individual plants in a common garden
 ,,Population,population where seed was collected/provenance
@@ -8,7 +8,7 @@ Cast_sess_SelfIncompatibilityCG_20240310.xlsx,Data regarding results of hand-sel
 ,,# Fruits,as described
 ,,Fruit-flower ratio (hand-selfed),as described
 ,,Fruit-flower ratio (bagged),as described
-CastPollExcl_submission_20240310.R,R script containing analyses for all subsequent data files,,
+CastPollExcl_rev1_deposit_20240502.R,R script containing analyses for all subsequent data files,,
 Cast_pollExclData_submission20240310.csv,data resulting from pollination exclusion experiment,plantID,unique identified for individual plant included in experiment
 ,,pop,population code
 ,,year,year experiment was performed
